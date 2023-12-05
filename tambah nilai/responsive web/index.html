@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive WEB</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&family=Poppins:wght@300&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar">
+        <h4>Dashboard</h4>
+        <div class="profile">
+            <span class="fas fa-search"></span>
+            <img class="profile-image" src="https://picsum.photos/200/200?random=2">
+            <p class="profile-name">lorem ipsum</p>
+        </div>
+    </nav>
+    
+
+    <!--Sidebar-->
+    <input type="checkbox" id="toggle">
+    <label class="side-toggle"
+    for="toggle"><span class="fas fa-bars"></span></label>
+
+    <div class="sidebar">
+        <div class="sidebar-menu">
+            <span class="fas fa-clipboard-list"></span><p>Overview</p>
+        </div>
+        <div class="sidebar-menu">
+            <span class="fas fa-users"></span><p>Teams</p>
+        </div>
+       <div class="sidebar-menu">
+        <span class="fas fa-credit-card"></span><p>Payment</p>
+       </div>
+       <div class="sidebar-menu">
+        <span class="fas fa-chart-line"></span><p>Statistic</p>
+       </div>
+       <div class="sidebar-menu">
+        <span class="fas fa-id-card"></span><p>Contact</p>
+       </div>
+       <div class="sidebar-menu">
+        <span class="fas fa-cog"></span><p>Setting</p>
+       </div>
+    </div>
+
+
+    <!--Main Dashboard-->
+    <main>
+        <div class="dashboard-container">
+            <!--Card Top-->
+            <div class="card total1">
+                <div class="info">
+                    <div class="info-detail">
+                        <h3>Revenue</h3>
+                        <p>lorem ipsum dolor</p>
+                        <h2>1,873,250 <span>USD</span></h2>
+                    </div>
+                    <div class="info-image">
+                        <i class="fas fa-money-check-alt"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card total2">
+                <div class="info">
+                    <div class="info-detail">
+                        <h3>Total Order</h3>
+                        <p>Lorem Ipsum dolor</p>
+                        <h2>10.469 <span>Orders</span></h2>
+                    </div>
+                    <div class="info-image">
+                        <i class="fas fa-boxes"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card total3">
+                <div class="info">
+                    <div class="info-detail">
+                        <h3>Costumer</h3>
+                        <p>Lorem ipsum dolo</p>
+                        <h2>873<span>Companies</span></h2>
+                    </div>
+                    <div class="info-image">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card total4">
+                <div class="info">
+                    <div class="info-detail">
+                        <h3>Daily Orders</h3>
+                        <p>Lorem Ipsum dolor</p>
+                        <h2>1,873<span>Orders</span></h2>
+                    </div>
+                    <div class="info-image">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!--Card Bottom-->
+            <div class="card detail">
+                <div class="detail-header">
+                    <h2>All Orders</h2>
+                    <button>See More</button>
+                </div>
+                <table>
+                    <tr>
+                        <th>Order #</th>
+                        <th>Company Name</th>
+                        <th>Status</th>
+                        <th>Total</th>
+                        <th>Created</th>
+                        <th>Last Updated</th>
+                    </tr>
+                    <tr>
+                        <td>#PW-0001</td>
+                        <td>Potential Corps</td>
+                        <td><span class="status confirmed"><i class="fas fa-circle"></i>CONFIRMED</span></td>
+                        <td>3,234,534 USD</td>
+                        <td>Apr 11, 2023</td>
+                        <td>Today</td>
+                    </tr>
+                    <tr>
+                        <td>#PW-0001</td>
+                        <td>Potential Corps</td>
+                        <td><span class="status onprogress"><i class="fas fa-circle"></i>ONPROGRESS</span></td>
+                        <td>3,234,534 USD</td>
+                        <td>Apr 11, 2023</td>
+                        <td>Today</td>
+                    </tr>
+                    <tr>
+                        <td>#PW-0001</td>
+                        <td>Potential Corps</td>
+                        <td><span class="status fulfillid"><i class="fas fa-circle"></i>FULFILLED</span></td>
+                        <td>3,234,534 USD</td>
+                        <td>Apr 11, 2023</td>
+                        <td>Today</td>
+                    <tr>
+                        <td>#PW-0001</td>
+                        <td>Potential Corps</td>
+                        <td><span class="status confirmed"><i class="fas fa-circle"></i>CONFIRMED</span></td>
+                        <td>3,234,534 USD</td>
+                        <td>Apr 11, 2023</td>
+                        <td>Today</td>
+                    </tr>
+                    <tr>
+                        <td>#PW-0001</td>
+                        <td>Potential Corps</td>
+                        <td><span class="status onprogress"><i class="fas fa-circle"></i>ONPROGRESS</span></td>
+                        <td>3,234,534 USD</td>
+                        <td>Apr 11, 2023</td>
+                        <td>Today</td>
+                    </tr>
+                    <tr>
+                        <td>#PW-0001</td>
+                        <td>Potential Corps</td>
+                        <td><span class="status fulfillid"><i class="fas fa-circle"></i>FULFILLED</span></td>
+                        <td>3,234,534 USD</td>
+                        <td>Apr 11, 2023</td>
+                        <td>Today</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="card costumer">
+                <h2>Sales Activities</h2>
+                <div class="costumer-wrapper">
+                    <img class="costumer-image" src="https://picsum.photos/200/200?random=5">
+                    <div class="costumer-name">
+                        <h4>Clay Aiken</h4>
+                        <p>lorem ipsumm dolor sit amet</p>
+                    </div>
+                    <p class="costumer-date">Today</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,38 @@
+#container {
+    display: grid;
+    grid-template-rows: [header-start] 100px [content-start] 400px [footer-start] 100px;
+    grid-template-columns: [ads] 200px [content] 500px [links] 200px;
+    grid-template-areas:
+    "header header header"
+    "ads main links"
+    "footer footer footer";
+    border: 1px solid black;
+    margin: 10px 20px 10px 20px;
+  }
+
+#one {
+  background-color: #fff;
+  grid-area: header;
+  text-align: center;
+}
+
+#two {
+  background-color: blue;
+  grid-area: ads;
+}
+
+#three {
+  background-color: aqua;
+  grid-area: main;
+}
+
+#four {
+  background-color: brown;
+  grid-area: links;
+}
+
+#five {
+  background-color: #fff;
+  grid-area: footer;
+  text-align: center;
+}

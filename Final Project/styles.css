@@ -1,0 +1,151 @@
+body { 
+    display: grid;
+    background-color: #8e7cdd;
+    height: 100vh;
+    margin: 0;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 100px 1fr;
+    grid-template-areas:
+    "sidebar header"
+    "sidebar main";
+    font-family: "Poppons", sans-serif;
+}
+
+.container {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 2;
+    padding-left: 6rem;
+}
+
+
+/* sidebar */ 
+
+.side-toggle {
+    position: fixed;
+    z-index: 2;
+    top: 20;
+    left: 25;
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-top: 30px;
+    grid-area: sidebar;
+}
+
+#toggle {
+    display: none;
+}
+
+.sidebar {
+    position: fixed;
+    height: 100%;
+    width: 200px;
+    left: 0;
+    top: 0;
+    padding: 80px 0 15px 0;
+    color: #fff;
+    background-color: #2d2b98;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    grid-area: sidebar;
+}
+
+.sidebar-menu {
+    display: flex;
+    align-items: center;
+    padding: 15px 25px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.sidebar-menu > span {
+    font-size: 25px;
+    padding: 15px;
+    padding-left: 0;
+}
+
+.sidebar-menu:hover {
+    color: #2d2b98;
+    background-color: #f8f8fb;
+}
+
+#toggle:checked ~ .sidebar {
+    width: 70px;
+}
+
+#toggle:checked ~ .sidebar .sidebar-menu > p {
+    display: none;
+}
+
+#toggle:checked ~ main {
+    margin-left: -200px;
+    transition: all 0.2s ease-in;
+}
+
+.main { 
+    background-color: #8e7cdd;
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 165px 165px 165px 165px 165px 165px 165px 165px 165px;
+    grid-template-areas: 
+    "c1 c2 c3 c4 c5 c6 c7 c8 c9"
+    ;
+    height: 25%;
+    gap: 20px;
+    margin-top: 60px;
+    padding: 10px;
+    justify-content: center;
+    transition: all 0.1s ease-in;
+} 
+
+.card { 
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.card:nth-child(1) { 
+    grid-area: c1;
+}
+
+.card:nth-child(2) { 
+    grid-area: c2;
+}
+
+.card:nth-child(3) { 
+    grid-area: c3;
+}
+
+.card:nth-child(4) { 
+    grid-area: c4;
+}
+
+.card:nth-child(5) { 
+    grid-area: c5;
+}
+
+.card:nth-child(6) { 
+    grid-area: c6;
+}
+.card:nth-child(7) { 
+    grid-area: c7;
+}
+
+.card:nth-child(8) { 
+    grid-area: c8;
+}
+
+.card:nth-child(9) { 
+    grid-area: c9
+}
+
+.card:nth-child(10) { 
+    grid-area: c10;
+}
